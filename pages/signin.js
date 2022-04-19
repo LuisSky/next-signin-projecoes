@@ -1,9 +1,15 @@
 import Head from 'next/head'
-import styles from '../styles/Signin.module.css'
+import style from '../styles/Signin.module.css'
 
 export default function Signin() {
   return (
-    <div className={styles.container}>
+    <div className="container d-flex justify-content-center align-content-center flex-wrap main-container">
+      <style jsx>{`
+        .main-container {
+          min-height: 100vh;
+        }
+      `}</style>
+      
       <Head>
         <title>Login page</title>
         <meta name="description" content="pagina de login" />
@@ -22,8 +28,8 @@ export default function Signin() {
         crossOrigin="anonymous"
       />
       
-      <div className={styles.login}>
-        <img src='http://projecoesengenharia.com.br/logo1.jpg'></img>
+      <div className="align-content-center p-3">
+        <img className='img-responsive' src='http://projecoesengenharia.com.br/logo1.jpg'></img>
         <form>
         <label>Nome de usuário:</label>
           <div className="mt-1 input-group">            
@@ -44,6 +50,8 @@ export default function Signin() {
           
         </form>
       </div>
+      
+      
       
     </div>
   
