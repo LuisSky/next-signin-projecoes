@@ -25,20 +25,20 @@ export default function Signin() {
       <div className={styles.login}>
         <img src='http://projecoesengenharia.com.br/logo1.jpg'></img>
         <form>
-        
-          <div className="form-group">
-            <label>Nome de usuário:</label>
-            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="@nome_usuario"></input>
+        <label>Nome de usuário:</label>
+          <div className="mt-1 input-group">            
+            <span className="input-group-text">@</span>
+            <input type="text" className="form-control" placeholder="Username"></input>
           </div>
-          
-          <div className={styles.formlogin}>
+                    
+          <div className="mt-2">
             <div className="form-group">
               <label>Senha</label>
-              <input type="password" className="form-control" id="password" placeholder="Senha"></input>
+              <input type="password" className="mt-1 form-control" id="password" placeholder="Senha"></input>
             </div>
           </div>
           
-          <div className={styles.formlogin}>
+          <div className="mt-3 d-grid">
             <button className="form-login" type="submit" className="btn btn-primary">Login</button>
           </div>
           
